@@ -1,0 +1,64 @@
+{
+   "name": "likewares/laravel-money",
+   "description": "Package pour Laravel permettant de formater les devises",
+   "keywords": [
+      "laravel",
+      "monnaie",
+      "devises",
+      "formater",
+      "convertir"
+   ],
+   "license": "MIT",
+   "authors": [
+      {
+         "name": "KOUAOBILE ASSANDE HUGUES",
+         "email": "assandehugues@gmail.com",
+         "homepage": "https://crm.likewares.com",
+         "role": "CEO Developer"
+      }
+   ],
+   "require": {
+      "php": "^8.0|^8.1|^8.2|^8.3|^8.4",
+      "illuminate/contracts": "^10.0|^11.0|^12",
+      "illuminate/support": "^10.0|^11.0|^12",
+      "illuminate/validation": "^10.0|^11.0|^12",
+      "illuminate/view": "^10.0|^11.0|^12",
+      "vlucas/phpdotenv": "^5.4.1"
+   },
+   "require-dev": {
+      "phpunit/phpunit": "^10.5|^11.0|^12.0",
+      "orchestra/testbench": "^8.0|^9.0|^10",
+      "vimeo/psalm": "^5.26.1|^6.0"
+   },
+   "autoload": {
+      "psr-4": {
+         "Likewares\\Money\\": "src"
+      },
+      "files": [
+         "src/helpers.php"
+      ]
+   },
+   "autoload-dev": {
+      "psr-4": {
+         "Likewares\\Money\\Tests\\": "tests"
+      }
+   },
+   "extra": {
+      "laravel": {
+         "providers": [
+            "Likewares\\Money\\Provider"
+         ]
+      }
+   },
+   "scripts": {
+      "test": "vendor/bin/phpunit",
+      "psalm": "vendor/bin/psalm"
+   },
+   "config": {
+      "allow-plugins": {
+         "composer/package-versions-deprecated": true
+      }
+   },
+   "minimum-stability": "dev",
+   "prefer-stable": true
+}
